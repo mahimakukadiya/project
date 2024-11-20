@@ -4,26 +4,24 @@
 int main() {
     int seconds;
 
-    // Ask the user to input the number of seconds for the countdown
     printf("Enter the number of seconds for the countdown: ");
     scanf("%d", &seconds);
 
-    // Validate the input
-    if (seconds < 0) {
+    if (seconds < 0)
+    {
         printf("Invalid input. Please enter a non-negative number.\n");
-        return 1; // Exit the program with an error code
+        return 1;
     }
 
-    // Countdown loop
     while (seconds > 0) {
         printf("%d\n", seconds);
         sleep(1); // Wait for 1 second
-        seconds--; // Decrement the seconds
+        seconds--;
     }
 
-    // Print the completion message
     printf("Countdown completed!\n");
-    printf("mahima kukadiya, 24CE058");
+    printf("Mahima Kukadiya, 24CE058");
     return 0;
 }
+
 
